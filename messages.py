@@ -24,7 +24,8 @@ group_ids = db.Group.insert_many(
 ).inserted_ids
 db.Message.insert_many(
     [
-        dict(author_id=random.choice(user_ids), body=randstr())
+        #dict(author_id=random.choice(user_ids), body=randstr())
+        dict(group_id=random.choice(group_ids), body=randstr())
         for _ in range(num_users)
         for _ in range(messages_per_user)
     ]
