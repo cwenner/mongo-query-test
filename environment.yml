@@ -1,0 +1,6 @@
+name: mongotest
+channels:
+  - defaults
+dependencies:
+  - pymongo=3.7.2=py36he6710b0_0
+  - python=3.6.8=h0371630_0
